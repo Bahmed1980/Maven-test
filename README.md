@@ -1,11 +1,13 @@
-project
-|-- pom.xml
-`-- src
-    |-- main
-    |   `-- java
-    |       `-- $package
-    |           `-- App.java
-    `-- test
-        `-- java
-            `-- $package
-                `-- AppTest.java
+package com.mycompany.app;
+
+/**
+* Hello world!
+*
+*/
+public class App
+{
+    public static void main( String[] args )
+    {
+       System.out.println( "Hello World!" );
+       }
+ }      

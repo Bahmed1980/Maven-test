@@ -4,7 +4,7 @@ stages {
   stage('maven install') {
     steps {
       git
-      withMaven(globalMavenSettingsConfig: '', jdk: '', maven: '', mavenSettingsConfig: '', traceability: true) {
+      withMaven(maven: 'maven3')(globalMavenSettingsConfig: '', jdk: '', maven: '', mavenSettingsConfig: '', traceability: true) {
     sh 'mvn clean instal'
 }
     }
